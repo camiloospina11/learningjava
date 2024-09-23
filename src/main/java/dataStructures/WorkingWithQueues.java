@@ -44,7 +44,7 @@ public class WorkingWithQueues
         for (Person person : personQueue
         )
         {
-            System.out.println("Stack: " + person);
+            System.out.println("Queue: " + person);
 
         }
     }

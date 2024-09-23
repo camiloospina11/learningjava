@@ -14,6 +14,7 @@ public class WorkingWithMaps
         System.out.println(new Person("Damilia").hashCode());
         System.out.println(new Person("Damilia").hashCode());
         System.out.println(map.get(new Person("Damilia")));
+        maps();
 
     }
 
@@ -25,15 +26,17 @@ public class WorkingWithMaps
         test.forEach((string, prueba) -> System.out.println(string + " " + prueba));
         // A map can not duplicate keys
         Map<Integer, Person> map = new HashMap<>();
-        map.put(1, new Person("Carlos"));
-        map.put(2, new Person("Luis"));
-        map.put(3, new Person("Elkin"));
+        map.put(56, new Person("Carlos"));
+        map.put(7, new Person("Luis"));
+        map.put(97, new Person("camilo"));
+        map.put(45, new Person("Elkin"));
+        map.put(3, new Person("yeison"));
         System.out.println(map);
         System.out.println(map.size());
         System.out.println(map.get(2));
         System.out.println(map.containsKey(4));
         System.out.println(map.keySet());
-        System.out.println(map.replace(2, new Person("Maria")));
+        System.out.println(map.replace(3, new Person("Maria")));
         System.out.println(map.entrySet());
         System.out.println(map.containsValue(new Person("Carlos")));
         map.forEach((key, value) -> System.out.println(key + " " + value.name));
