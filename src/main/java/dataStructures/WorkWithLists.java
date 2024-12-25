@@ -31,5 +31,16 @@ public class WorkWithLists
             System.out.println(colors.get(i));
         }
 
+        int x = 10;
+        modifyValue(x);
+        System.out.println(x); // Output: 10 (Original value remains unchanged)
+        System.out.println(modifyValue(x));
     }
+
+    public static int modifyValue(int num) {
+        num = 20;
+        return num;
+    }
+
 }
+

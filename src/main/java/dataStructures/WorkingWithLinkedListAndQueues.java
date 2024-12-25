@@ -4,16 +4,16 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.Queue;
 
-public class WorkingWithQueues
+public class WorkingWithLinkedListAndQueues
 {
     public static void main(String[] args)
     {
         LinkedList<Person> linkedList = new LinkedList<>();
         linkedList.add(new Person("camilo", 25));
         linkedList.add(new Person("Luis", 24));
-        linkedList.add(new Person("carla", 23));
         linkedList.add(new Person("elkin", 22));
         linkedList.add(0, new Person("juan", 21));
+        linkedList.add(3, new Person("carla", 23));
 
         ListIterator<Person> listIterator = linkedList.listIterator();
         while (listIterator.hasNext()){

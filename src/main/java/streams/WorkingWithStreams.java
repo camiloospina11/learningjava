@@ -31,11 +31,11 @@ public class WorkingWithStreams
 
 //Parallel Execution
 
-        // parallelStream takes less time to be executed than Stream
+        // parallelStream takes less time to be executed than Stream since it print values in disorder.
         names.parallelStream()
                 .filter((String name) -> name.length() > 5)
-                .skip(2)
-                .limit(2)
+                .skip(1)
+                .limit(3)
                 .forEach(System.out::println);
 
         IntStream.of(new int[] {4, 7, 1, 8, 3, 9, 7})

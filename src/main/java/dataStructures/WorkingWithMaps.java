@@ -23,8 +23,8 @@ public class WorkingWithMaps
 
     {
         Map<String, String> test = Map.of("1", "3", "2", "4");
-        test.forEach((string, prueba) -> System.out.println(string + " " + prueba));
-        // A map can not duplicate keys
+        test.forEach((string, prueba) -> System.out.println(string + " - " + prueba));
+        // A map can not duplicate keys and doesn't care regarding order or sequence
         Map<Integer, Person> map = new HashMap<>();
         map.put(56, new Person("Carlos"));
         map.put(7, new Person("Luis"));
@@ -36,7 +36,7 @@ public class WorkingWithMaps
         System.out.println(map.get(2));
         System.out.println(map.containsKey(4));
         System.out.println(map.keySet());
-        System.out.println(map.replace(3, new Person("Maria")));
+        System.out.println("Replaced: "+ map.replace(3, new Person("Maria")));
         System.out.println(map.entrySet());
         System.out.println(map.containsValue(new Person("Carlos")));
         map.forEach((key, value) -> System.out.println(key + " " + value.name));

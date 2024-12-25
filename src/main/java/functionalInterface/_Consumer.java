@@ -16,7 +16,7 @@ public class _Consumer
 //       new Customer("Yeison", "32111233");
 //       new Customer("Cris", "32555566");
         System.out.println("BiConsumer Functional interface");
-        greetCustomerBiConsumer.accept(biCustomer, false);
+        greetCustomerBiConsumer.accept(biCustomer, true);
 
     }
 

@@ -11,6 +11,7 @@ public class WorkingWithArrays
         nums[1] = 4;
         nums[2] = 1;
         nums[3] = 3;
+        // A good form of transforming an array to string
         System.out.println(Arrays.toString(nums));
         System.out.println(nums[2]);
         nums[4] = 5;

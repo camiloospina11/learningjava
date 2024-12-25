@@ -37,7 +37,8 @@ public class ImperativeAndDeclarative
         System.out.println(females.get(0).equals(females.get(0)));
         // declarative approach
 //        Predicate<Person> personPredicate = x-> x.gender.equals(FEMALE);
-//        System.out.println("declarative");
+//        System.out.println("declarative: " + personPredicate);
+//        System.out.println("/////////////////////////////////");
         people.stream()
                 .filter(x-> x.gender.equals(FEMALE))
                 .forEach(System.out::println);

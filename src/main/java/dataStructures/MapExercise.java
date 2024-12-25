@@ -47,6 +47,8 @@ public class MapExercise
 
     }
 
+    // When a method return an object, interface or primitive variable keep in mind create that one inside the method and use the parameters that this store.
+
     public static Map<String, List<String>> groupMapByGender(List<Person> personas) {
         Map<String, List<String>> map = new HashMap<>();
         List<String> personasList;
