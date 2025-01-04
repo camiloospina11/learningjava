@@ -20,9 +20,8 @@ public class Optionals
 
         Optional.ofNullable(null)
                 .ifPresentOrElse(email -> System.out.println("sending message to: " + email),
-                        () -> {
-                            System.out.println("Cannot send email");
-                        });
+                        () ->
+                            System.out.println("Cannot send email"));
 
     }
 }
